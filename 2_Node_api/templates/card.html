@@ -1,0 +1,32 @@
+<figure class="card">
+  <!-- Ürünün resmini gösterecek alan, {%IMAGE%} ile resim yerine veriler eklenecek -->
+  <div class="card__emoji">{%IMAGE%}{%IMAGE%}</div>
+
+  <!-- Ürünün adını gösterecek başlık alanı -->
+  <div class="card__title-box">
+    <h2 class="card__title">{%PRODUCTNAME%}</h2>
+  </div>
+
+  <!-- Ürün detaylarını içeren alan -->
+  <div class="card__details">
+    <!-- Eğer ürün organik değilse 'not-organic' class'ı ekleniyor -->
+    <div class="card__detail-box {%NOT_ORGANIC%}">
+      <h6 class="card__detail card__detail--organic">Organic!</h6>
+    </div>
+
+    <!-- Ürünün miktarı kutu başına -->
+    <div class="card__detail-box">
+      <h6 class="card__detail">{%QUANTITY%} per 📦</h6>
+    </div>
+
+    <!-- Ürünün fiyatı -->
+    <div class="card__detail-box">
+      <h6 class="card__detail card__detail--price">{%PRICE%}€</h6>
+    </div>
+  </div>
+
+  <!-- Ürün detaylarına yönlendiren link -->
+  <a class="card__link" href="/product?id={%ID%}">
+    <span>Detail <i class="emoji-right">👉</i></span>
+  </a>
+</figure>
